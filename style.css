@@ -4,23 +4,31 @@
     padding: 0;
 }
 body{
+    height: 10000px;
     font-family: 'Playfair Display', sans-serif;
-    background-color: rgb(14, 13, 13);
+    background-color: #0e0d0d;
 }
-p, h1{
+p, h1, h2, h3, h4, h5, h6{
     color: white;
 }
+b{
+    color: #e23d01;
+}
+.contrasct{
+    color: #e23d01;
+}
 .header{
-    width: 100vw;
+    width: 98vw;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header img{
-    padding-left: 20px;
-    width: 40px;
-    height: 40px;
+.header a{
+    font-size: 25px;
+    color: #e23d01;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 .header .header-tools{
     width: 35vw;
@@ -28,7 +36,8 @@ p, h1{
     align-items: center;
     justify-content: center;
 }
-.header .header-tools p{
+p, a{
+    text-decoration: none;
     font-size: 22px;
     margin-right: 20px;
     margin-left: 20px;
@@ -37,13 +46,69 @@ p, h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin: 10px 0 0 5px;
     background-image: url(img/imagem-moda.png);
     background-position: 50% 50%;
-    margin-left: 14px;
     width: 98vw;
-    height: 60vh;
+    height: 40vh;
 }
 .image-background h1{
+    font-size: 50px;
+    margin-right: 35px;
     text-shadow: #0f0f0f 3px 3px;
+}
+.subtitle{
+    margin: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 13vh;
+}
+.subtitle h2, .subtitle h3{
+    margin-right: 35px;
+}
+.subtitle h2{
+    font-size: 25px;
+}
+.subtitle h3{
+    letter-spacing: 2px;
+    border-bottom: 1px #e23d01 solid;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98vw;
+    height: 26vh;
+    margin: 0 0 0 0;
+}
+.boxes .box .image img{
+    width: 40px;
+    height: 40px;
+}
+.boxes .box .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxes .box .description h4{
+    margin: 5px 0 5px 0;
+}
+.boxes .box .description h5{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.boxes .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 13px 0 20px;
+    width: 240px;
+    height: 150px;
+    text-align: center;
+    overflow: clip;
 }
