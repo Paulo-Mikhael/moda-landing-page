@@ -30,10 +30,18 @@ b{
     font-weight: 700;
 }
 .header .header-tools{
-    width: 35vw;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.header-tools p{
+    border-radius: 5px;
+    padding: 5px;
+}
+.header-tools p:hover{
+    cursor: pointer;
+    background-color: #2a2a2a;
 }
 p, a{
     text-decoration: none;
@@ -124,7 +132,7 @@ p, a{
     border-top: 1px dashed #e23d01;
     margin: 25px 0 0 0;
     width: 98.5vw;
-    height: 650px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,6 +163,7 @@ p, a{
 }
 .shop-items{
     position: sticky;
+    align-items: center;
     justify-content: center;
     display: flex;
     height: 100%;
@@ -169,8 +178,8 @@ p, a{
     height: 100%;
 }
 .shop-items .item{
-    width: 230px;
-    height: 400px;
+    width: 17vw;
+    height: 60vh;
 }
 .shop footer{
     cursor: pointer;
@@ -183,7 +192,7 @@ p, a{
     border-radius: 20px;
 }
 .blog{
-    border: 2px dashed #e23d01;
+    border: 2px dashed #e74307;
     width: 95vw;
     height: 30pc;
     background-color: #0f0f0f;
@@ -223,6 +232,7 @@ p, a{
     font-size: 48px;
 }
 footer{
+    width: 98vw;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -230,4 +240,27 @@ footer{
 }
 footer div{
     padding: 20px 10px 20px 10px;
+}
+
+@media screen and (max-width:1100px){
+    .boxes{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog{
+        width: 95vw;
+        height: 90vh;
+        flex-direction: column;
+    }
+    .shop{
+        width: 98vw;
+    }
+    .shop-items .item{
+        width: 15vw;
+        height: 400px;
+    }
+    .box{
+        padding-left: 20%;
+    }
 }
